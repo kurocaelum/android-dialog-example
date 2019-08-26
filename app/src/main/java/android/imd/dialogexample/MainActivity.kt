@@ -68,4 +68,14 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         var dialog = SimpleDialogFragment()
         dialog.show(supportFragmentManager, "simpleDialog")
     }
+
+    fun openRadio(view: View){
+        var dialog = RadioDialogFragment()
+        dialog.show(supportFragmentManager, "radioDialog")
+    }
+
+    fun openChecked(view: View){
+        var dialog = CheckedDialogFragment()
+        dialog.show(supportFragmentManager, "checkedDialog")
+    }
 }
